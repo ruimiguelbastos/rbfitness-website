@@ -4,7 +4,6 @@ import React from "react";
 import { Typography, Carousel } from "@material-tailwind/react";
 import GalleryWithCarousel from "../components/gallery-with-carousel";
 
-
 const TESTIMONIALS = [
   {
     images: [
@@ -15,7 +14,7 @@ const TESTIMONIALS = [
       {
         source: "/image/transformations/rui-2.jpeg",
         title: "Transfomation 2",
-      }
+      },
     ],
   },
   {
@@ -27,7 +26,7 @@ const TESTIMONIALS = [
       {
         source: "/image/transformations/tanjil-2.jpeg",
         title: "Transfomation 2",
-      }
+      },
     ],
   },
   {
@@ -43,7 +42,7 @@ const TESTIMONIALS = [
       {
         source: "/image/transformations/mario-3.jpeg",
         title: "Transfomation 3",
-      }
+      },
     ],
   },
 ];
@@ -58,11 +57,11 @@ export function Testimonials() {
           </Typography>
         </div>
         <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-3 lg:px-20">
-          {TESTIMONIALS.map(({images}, key) => (
+          {TESTIMONIALS.map(({ images }, key) => (
             <GalleryWithCarousel key={key} {...images} />
           ))}
         </div>
-      </div> 
+      </div>
     </section>
   );
 }

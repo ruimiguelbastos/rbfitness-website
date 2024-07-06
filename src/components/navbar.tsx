@@ -1,5 +1,5 @@
 import React from "react";
-import Link from 'next/link'
+import Image from "next/image";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -38,7 +38,7 @@ export function Navbar() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
+      () => window.innerWidth >= 960 && setOpen(false),
     );
   }, []);
 
@@ -72,10 +72,7 @@ export function Navbar() {
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
-           <img      src="favicon.png"
-                alt="home"
-                width="60px" height="60px"
-            />
+          <Image src="/favicon.png" alt="home" width={60} height={60} />
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
@@ -89,7 +86,7 @@ export function Navbar() {
           <NavItem href="#faq">FAQ</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
-          <a href="https://www.instagram.com/ruimiguelbastos/" target='_blank'>
+          <a href="https://www.instagram.com/ruimiguelbastos/" target="_blank">
             <IconButton
               variant="text"
               color={isScrolling ? "gray" : "white"}
@@ -115,14 +112,17 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-          <NavItem href="#contact">Contact Me</NavItem>
-          <NavItem href="#transformations">Transformations</NavItem>
-          <NavItem href="#about">About</NavItem>
-          <NavItem href="#services">Services</NavItem>
-          <NavItem href="#faq">FAQ</NavItem>
+            <NavItem href="#contact">Contact Me</NavItem>
+            <NavItem href="#transformations">Transformations</NavItem>
+            <NavItem href="#about">About</NavItem>
+            <NavItem href="#services">Services</NavItem>
+            <NavItem href="#faq">FAQ</NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <a href="https://www.instagram.com/ruimiguelbastos/" target='_blank'>
+            <a
+              href="https://www.instagram.com/ruimiguelbastos/"
+              target="_blank"
+            >
               <IconButton variant="text" color="gray" size="sm">
                 <i className="fa-brands fa-instagram text-base" />
               </IconButton>

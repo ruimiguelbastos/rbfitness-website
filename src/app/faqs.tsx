@@ -7,7 +7,7 @@ const FAQS = [
   {
     title: "How do I get started?",
     desc: "Click on this link to contact me and I'll reach out to you!",
-    href: 'https://www.supersetapp.com/clients/154752/apply',
+    href: "https://www.supersetapp.com/clients/154752/apply",
   },
   {
     title: "Do I have to pay on our first meeting?",
@@ -16,7 +16,7 @@ const FAQS = [
   {
     title: "What kind of services do you provide? How much do I pay?",
     desc: "Check this page for all the services information.",
-    href: '#services'
+    href: "#services",
   },
 ];
 
@@ -38,7 +38,16 @@ export function Faqs() {
               </Typography>
               <div className="pt-2">
                 <Typography className="font-normal !text-gray-500">
-                  {href ? <a href={href} target={ href.includes('http') ? "_blank" : "_self" } >{desc}</a> : desc}
+                  {href ? (
+                    <a
+                      href={href}
+                      target={href.includes("http") ? "_blank" : "_self"}
+                    >
+                      {desc}
+                    </a>
+                  ) : (
+                    desc
+                  )}
                 </Typography>
               </div>
             </Card>

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 
-
 function Hero() {
   return (
     <div id="contact" className="relative w-full">
@@ -20,9 +19,20 @@ function Hero() {
               Gain muscle, Lose weight, Hit your goals!
             </Typography>
             <div className="w-1/2">
-            <a href="https://www.supersetapp.com/clients/154752/apply" target='_blank'>
-              <Button fullWidth size="lg" variant="gradient" color="red" ripple={true}>Contact Me</Button>
-            </a>
+              <a
+                href="https://www.supersetapp.com/clients/154752/apply"
+                target="_blank"
+              >
+                <Button
+                  fullWidth
+                  size="lg"
+                  variant="gradient"
+                  color="red"
+                  ripple={true}
+                >
+                  Contact Me
+                </Button>
+              </a>
             </div>
           </div>
           <Image

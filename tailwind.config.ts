@@ -7,11 +7,10 @@ const config: Config = withMT({
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-		extend: {
-      
-			animation: {
-				fade: 'fadeIn 2s ease-in-out',
-			},
+    extend: {
+      animation: {
+        fade: "fadeIn 2s ease-in-out",
+      },
 
       colors: {
         grayblue: {
@@ -28,14 +27,14 @@ const config: Config = withMT({
         },
       },
 
-			keyframes: {
-				fadeIn: {
-					from: { opacity: 0 },
-					to: { opacity: 1 },
-				},
-			},
-		},
-	},
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+    },
+  },
   plugins: [],
 });
 

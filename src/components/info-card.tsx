@@ -7,7 +7,6 @@ interface InfoCardProps {
   children: React.ReactNode;
 }
 
-
 export function InfoCard({ title, children }: InfoCardProps) {
   return (
     <Card color="transparent" shadow={false}>

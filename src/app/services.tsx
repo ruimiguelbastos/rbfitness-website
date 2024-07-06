@@ -5,46 +5,43 @@ import { PricingCard } from "../components/pricing-card";
 
 const SERVICES = [
   {
-    title: 'STANDALONE WORKOUT PLAN',
-    price: '30',
-    bulletpoints: [
-      'Individualized training plan',
-      'Exercise library',
-    ],
-    color: 'gray',
+    title: "STANDALONE WORKOUT PLAN",
+    price: "30",
+    bulletpoints: ["Individualized training plan", "Exercise library"],
+    color: "gray",
   },
   {
-    title: 'NUTRITIONAL GUIDANCE',
-    price: '19',
+    title: "NUTRITIONAL GUIDANCE",
+    price: "19",
     bulletpoints: [
-      'Individualized nutritional strategy',
-      'Weekly check-ins',
-      'Regular video chats',
-      'Open messages with me through app',
+      "Individualized nutritional strategy",
+      "Weekly check-ins",
+      "Regular video chats",
+      "Open messages with me through app",
     ],
     frequency: "week",
-    color: 'blue-gray',
+    color: "blue-gray",
   },
   {
-    title: 'ONLINE COACHING',
-    price: '36',
+    title: "ONLINE COACHING",
+    price: "36",
     bulletpoints: [
-      'Individualized training plan',
-      'Individualized nutritional strategy',
-      'Weekly check-ins',
-      'Regular video chats',
-      'Technique evaluation',
-      'Open messages with me through app',
-      'Exercise library',
+      "Individualized training plan",
+      "Individualized nutritional strategy",
+      "Weekly check-ins",
+      "Regular video chats",
+      "Technique evaluation",
+      "Open messages with me through app",
+      "Exercise library",
     ],
     frequency: "week",
-    color: 'gray',
+    color: "gray",
   },
 ];
 
 export function Services() {
   return (
-      <section id="services" className="px-10 py-20">
+    <section id="services" className="px-10 py-20">
       <div className="container mx-auto">
         <div className="mb-20 flex w-full flex-col items-center">
           <Typography variant="h2" color="blue-gray" className="mb-2">
