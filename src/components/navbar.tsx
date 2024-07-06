@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -72,7 +71,7 @@ export function Navbar() {
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
-          <Image src="/favicon.png" alt="home" width={60} height={60} />
+          <img src="/favicon.png" alt="home" width="60px" height="60px" />
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${

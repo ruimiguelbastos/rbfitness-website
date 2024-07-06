@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 
 function Hero() {
@@ -35,9 +34,9 @@ function Hero() {
               </a>
             </div>
           </div>
-          <Image
-            width={470}
-            height={576}
+          <img
+            width="470px"
+            height="576px"
             src="/image/hero.png"
             alt="team work"
             className="animate-fade col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"

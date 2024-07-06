@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Carousel } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import GalleryWithCarousel from "../components/gallery-with-carousel";
 
 const TESTIMONIALS = [
