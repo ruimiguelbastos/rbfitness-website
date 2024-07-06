@@ -8,14 +8,6 @@ const nextConfig = {
       },
     ],
   },
-  redirects: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
