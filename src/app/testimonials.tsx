@@ -48,11 +48,11 @@ const TESTIMONIALS = [
   {
     images: [
       {
-        source: "/image/transformations/alex-1.JPG",
+        source: "/image/transformations/alex-1.jpeg",
         title: "Transfomation 1",
       },
       {
-        source: "/image/transformations/alex-2.JPG",
+        source: "/image/transformations/alex-2.jpeg",
         title: "Transfomation 2",
       }
     ],
