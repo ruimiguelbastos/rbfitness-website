@@ -6,7 +6,7 @@ import { PricingCard } from "../components/pricing-card";
 const SERVICES = [
   {
     title: "STANDALONE WORKOUT PLAN",
-    price: "30",
+    price: "35",
     bulletpoints: ["Individualized training plan", "Exercise library"],
     color: "gray",
   },
