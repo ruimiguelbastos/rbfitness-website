@@ -6,13 +6,13 @@ import { PricingCard } from "../components/pricing-card";
 const SERVICES = [
   {
     title: "STANDALONE WORKOUT PLAN",
-    price: "35",
+    price: "38",
     bulletpoints: ["Individualized training plan", "Exercise library"],
     color: "gray",
   },
   {
     title: "NUTRITIONAL GUIDANCE",
-    price: "19",
+    price: "25",
     bulletpoints: [
       "Individualized nutritional strategy",
       "Weekly check-ins",
@@ -24,7 +24,7 @@ const SERVICES = [
   },
   {
     title: "ONLINE COACHING",
-    price: "36",
+    price: "43",
     bulletpoints: [
       "Individualized training plan",
       "Individualized nutritional strategy",
