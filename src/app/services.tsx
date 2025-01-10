@@ -6,11 +6,11 @@ import { PricingCard } from "../components/pricing-card";
 const SERVICES = [
   {
     title: "STANDALONE WORKOUT PLAN",
-    price: "38",
-    bulletpoints: ["Individualized training plan", "Exercise library"],
+    price: "55",
+    bulletpoints: ["Individualized training plan", "Introduction to the program", "Exercise library"],
     color: "gray",
   },
-  {
+/*  {
     title: "NUTRITIONAL GUIDANCE",
     price: "25",
     bulletpoints: [
@@ -21,10 +21,10 @@ const SERVICES = [
     ],
     frequency: "week",
     color: "blue-gray",
-  },
+  },*/
   {
     title: "ONLINE COACHING",
-    price: "43",
+    price: "67",
     bulletpoints: [
       "Individualized training plan",
       "Individualized nutritional strategy",
@@ -35,7 +35,7 @@ const SERVICES = [
       "Exercise library",
     ],
     frequency: "week",
-    color: "gray",
+    color: "blue-gray", //color: "gray",
   },
 ];
 
