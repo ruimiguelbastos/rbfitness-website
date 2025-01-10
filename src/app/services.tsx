@@ -37,6 +37,13 @@ const SERVICES = [
     frequency: "week",
     color: "blue-gray", //color: "gray",
   },
+  {
+    title: "In Person Training",
+    bulletpoints: [
+      "Coming soon",
+    ],
+    color: "gray",
+    },
 ];
 
 export function Services() {

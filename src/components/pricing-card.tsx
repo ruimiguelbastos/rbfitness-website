@@ -46,6 +46,7 @@ export function PricingCard({ title, price, bulletpoints, frequency, color }) {
         >
           {title}
         </Typography>
+        {price ? 
         <Typography
           variant="h1"
           color="white"
@@ -58,7 +59,7 @@ export function PricingCard({ title, price, bulletpoints, frequency, color }) {
           ) : (
             ""
           )}
-        </Typography>
+          </Typography> : ('')}
       </CardHeader>
       <CardBody className="p-0">
         <ul className="flex flex-col gap-4">
