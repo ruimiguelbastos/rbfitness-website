@@ -57,6 +57,22 @@ const TESTIMONIALS = [
       }
     ],
   },
+  {
+    images: [
+      {
+        source: "/image/transformations/steve-1.jpeg",
+        title: "Transfomation 1",
+      },
+      {
+        source: "/image/transformations/steve-2.jpeg",
+        title: "Transfomation 2",
+      },
+      {
+        source: "/image/transformations/steve-3.jpeg",
+        title: "Transfomation 3",
+      }
+    ],
+  },
 ];
 
 export function Testimonials() {
