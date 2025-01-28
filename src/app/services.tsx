@@ -6,7 +6,7 @@ import { PricingCard } from "../components/pricing-card";
 const SERVICES = [
   {
     title: "STANDALONE WORKOUT PLAN",
-    price: "55",
+    price: "48",
     bulletpoints: ["Individualized training plan", "Introduction to the program", "Exercise library"],
     color: "gray",
   },
@@ -24,7 +24,7 @@ const SERVICES = [
   },*/
   {
     title: "ONLINE COACHING",
-    price: "67",
+    price: "54",
     bulletpoints: [
       "Individualized training plan",
       "Individualized nutritional strategy",
@@ -39,9 +39,17 @@ const SERVICES = [
   },
   {
     title: "In Person Training",
+    price: "65",
     bulletpoints: [
-      "Coming soon",
+      "📍 Colchester, VT and Saint Albans, VT",
+      "In person session to push you to your best!",
+      "Individualized training plan",
+      "Individualized nutritional strategy",
+      "Technique evaluation",
+      "Open messages with me through app",
+      "Exercise library",
     ],
+    frequency: "session",
     color: "gray",
     },
 ];
