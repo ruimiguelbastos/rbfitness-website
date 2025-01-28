@@ -18,7 +18,7 @@ function Hero() {
               variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
             >
-              Book your free session with me. No commitment. We'll discuss your goals and see if we're a match!
+              Book your free session with me. No commitment. We&apos;ll discuss your goals and see if we&apos;re a match!
             </Typography>
             <div className="flex space-x-4 justify-center md:justify-start">
             <div className="w-1/2">
