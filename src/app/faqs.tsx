@@ -18,11 +18,11 @@ const FAQS = [
     desc: "Check this page for all the services information.",
     href: "#services",
   },
-  {
+  /*{
     title: "Where do you provide in person training sessions?",
     desc: "I do personal training sessions in Saint Albans, VT and Colchester, VT",
     href: "#services",
-  },
+  },*/
 ];
 
 export function Faqs() {
