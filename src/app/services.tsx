@@ -37,7 +37,7 @@ const SERVICES = [
     frequency: "week",
     color: "blue-gray", //color: "gray",
   },
-  {
+  /*{
     title: "In Person Training",
     price: "65",
     bulletpoints: [
@@ -51,7 +51,14 @@ const SERVICES = [
     ],
     frequency: "session",
     color: "gray",
-    },
+    },*/
+    {
+      title: "In Person Training",
+      bulletpoints: [
+        "Coming soon!",
+      ],
+      color: "gray",
+    }
 ];
 
 export function Services() {
