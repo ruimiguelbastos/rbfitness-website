@@ -10,18 +10,18 @@ const SERVICES = [
     bulletpoints: ["Individualized training plan", "Introduction to the program", "Exercise library"],
     color: "gray",
   },
-/*  {
-    title: "NUTRITIONAL GUIDANCE",
-    price: "25",
-    bulletpoints: [
-      "Individualized nutritional strategy",
-      "Weekly check-ins",
-      "Regular video chats",
-      "Open messages with me through app",
-    ],
-    frequency: "week",
-    color: "blue-gray",
-  },*/
+  /*  {
+      title: "NUTRITIONAL GUIDANCE",
+      price: "25",
+      bulletpoints: [
+        "Individualized nutritional strategy",
+        "Weekly check-ins",
+        "Regular video chats",
+        "Open messages with me through app",
+      ],
+      frequency: "week",
+      color: "blue-gray",
+    },*/
   {
     title: "ONLINE COACHING",
     price: "54",
@@ -37,11 +37,12 @@ const SERVICES = [
     frequency: "week",
     color: "blue-gray", //color: "gray",
   },
-  /*{
-    title: "In Person Training",
-    price: "65",
+  {
+    title: "In Person Training From",
+    from: true,
+    price: "55",
     bulletpoints: [
-      "📍 Colchester, VT and Saint Albans, VT",
+      "📍 Williston, VT",
       "In person session to push you to your best!",
       "Individualized training plan",
       "Individualized nutritional strategy",
@@ -51,14 +52,14 @@ const SERVICES = [
     ],
     frequency: "session",
     color: "gray",
-    },*/
-    {
-      title: "In Person Training",
-      bulletpoints: [
-        "Coming soon!",
-      ],
-      color: "gray",
-    }
+  }
+  /*{
+    title: "In Person Training",
+    bulletpoints: [
+      "Coming soon!",
+    ],
+    color: "gray",
+  }*/
 ];
 
 export function Services() {
