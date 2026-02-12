@@ -23,7 +23,7 @@ function Hero() {
             <div className="flex space-x-4 justify-center md:justify-start">
             <div className="w-1/2">
               <a
-                href="https://www.supersetapp.com/clients/154752/apply"
+                href="https://public.1fit.com/leadforms/019c2f40-06b2-72a8-9b92-0ce5e6915b8d"
                 target="_blank"
               >
                 <Button
@@ -38,7 +38,7 @@ function Hero() {
               </a>
             </div>
             <div>
-              <a href="mailto:ruibastos95@gmail.com">
+              <a href="mailto:ruibastosfitness@gmail.com">
                 <IconButton fullWidth
                   size="lg"
                   variant="gradient"
