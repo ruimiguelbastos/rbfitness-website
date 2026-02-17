@@ -9,7 +9,7 @@ function Hero() {
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
           <div className="col-span-1">
             <Typography variant="h2" color="white" className="mb-4">
-              Rui Bastos - Personal Trainer in Burlington, VT
+              Rui Bastos - Personal Trainer in Williston, VT
             </Typography>
             <Typography variant="h4" color="white" className="mb-4">
               Gain muscle, Lose weight, Hit your goals!
