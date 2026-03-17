@@ -40,7 +40,7 @@ const SERVICES = [
   {
     title: "In Person Training From",
     from: true,
-    price: "55",
+    price: "60",
     bulletpoints: [
       "📍 Williston, VT",
       "In person session to push you to your best!",
