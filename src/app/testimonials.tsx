@@ -86,10 +86,6 @@ const TESTIMONIALS = [
       {
         source: "/image/transformations/b-3.jpeg",
         title: "Transfomation 3",
-      },
-      {
-        source: "/image/transformations/b-4.jpeg",
-        title: "Transfomation 4",
       }
     ],
   },
