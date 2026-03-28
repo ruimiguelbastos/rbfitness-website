@@ -2,6 +2,8 @@
 
 import React from "react";
 import { Typography } from "@material-tailwind/react";
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 import GalleryWithCarousel from "../components/gallery-with-carousel";
 
 const TESTIMONIALS = [
@@ -92,21 +94,35 @@ const TESTIMONIALS = [
 ];
 
 export function Testimonials() {
+  const [emblaRef] = useEmblaCarousel({ 
+    loop: true, 
+    align: 'start',
+    slidesToScroll: 1 
+  }, [
+    Autoplay({ delay: 2000, stopOnInteraction: false })
+  ]);
+
   return (
-    <section id="transformations" className="px-10 py-20">
-      <div className="container mx-auto">
-        <div className="mb-20 flex w-full flex-col items-center">
-          <Typography variant="h2" color="blue-gray" className="mb-2">
-            Transformations
-          </Typography>
-        </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-3 lg:px-20">
-          {TESTIMONIALS.map(({ images }, key) => (
-            <GalleryWithCarousel key={key} {...images} />
-          ))}
+    <section className="py-10 bg-white">
+      <div className="px-3 md:px-6 lg:px-12 ">
+        <div className="overflow-hidden" ref={emblaRef}>
+          {/* Container */}
+          <div className="flex ml-[-16px]"> 
+            {TESTIMONIALS.map(({ images }, key) => (
+              <div 
+                key={key}
+                className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_25%] min-w-0 pl-[16px] relative h-[400px]"
+              >
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-md">
+                  <GalleryWithCarousel key={key} {...images} />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
 export default Testimonials;

@@ -2,7 +2,7 @@ import { Carousel } from "@material-tailwind/react";
 
 export function GalleryWithCarousel(images) {
   return (
-    <Carousel loop={true} autoplay={true} className="rounded-xl">
+    <Carousel loop={true} autoplay={false} className="rounded-xl">
       {Object.values(images).map(({ source, title }, key) => (
         <img
           key={key}
