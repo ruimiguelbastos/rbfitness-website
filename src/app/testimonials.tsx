@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
-import { Typography } from "@material-tailwind/react";
+import React, { useCallback } from "react";
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import GalleryWithCarousel from "../components/gallery-with-carousel";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const TESTIMONIALS = [
   {
@@ -94,19 +94,45 @@ const TESTIMONIALS = [
 ];
 
 export function Testimonials() {
-  const [emblaRef] = useEmblaCarousel({ 
+  // 1. Destructure emblaApi to control the carousel via buttons
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true, 
     align: 'start',
     slidesToScroll: 1 
   }, [
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   ]);
 
+  // 2. Button Handlers
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
   return (
-    <section className="py-10 bg-white">
-      <div className="px-3 md:px-6 lg:px-12 ">
+    <section className="py-10 bg-white overflow-x-hidden">
+      <div className="px-3 md:px-6 lg:px-12 relative max-w-[1800px] mx-auto">
+        
+        <button 
+          onClick={scrollPrev}
+          className="absolute left-[-10px] lg:left-0 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white shadow-lg border border-gray-100 hover:bg-gray-50 transition-all hidden md:block"
+          aria-label="Previous slide"
+        >
+          <ChevronLeftIcon className="w-6 h-6 text-gray-800" />
+        </button>
+
+        <button 
+          onClick={scrollNext}
+          className="absolute right-[-10px] lg:right-0 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white shadow-lg border border-gray-100 hover:bg-gray-50 transition-all hidden md:block"
+          aria-label="Next slide"
+        >
+          <ChevronRightIcon className="w-6 h-6 text-gray-800" />
+        </button>
+
         <div className="overflow-hidden" ref={emblaRef}>
-          {/* Container */}
           <div className="flex ml-[-16px]"> 
             {TESTIMONIALS.map(({ images }, key) => (
               <div 
