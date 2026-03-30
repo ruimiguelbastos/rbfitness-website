@@ -135,7 +135,7 @@ export function Testimonials() {
             {TESTIMONIALS.map(({ images }, key) => (
               <div 
                 key={key}
-                className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.33%] min-w-0 pl-[24px] relative h-[450px]"
+                className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.33%] min-w-0 pl-[24px] relative h-[400px]"
               >
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-md">
                   <GalleryWithCarousel key={key} {...images} />
