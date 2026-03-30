@@ -10,53 +10,17 @@ const TESTIMONIALS = [
   {
     images: [
       {
-        source: "/image/transformations/rui-1.jpeg",
+        source: "/image/transformations/k-1.jpeg",
         title: "Transfomation 1",
       },
       {
-        source: "/image/transformations/rui-2.jpeg",
-        title: "Transfomation 2",
-      },
-    ],
-  },
-  {
-    images: [
-      {
-        source: "/image/transformations/tanjil-1.jpeg",
-        title: "Transfomation 1",
-      },
-      {
-        source: "/image/transformations/tanjil-2.jpeg",
-        title: "Transfomation 2",
-      },
-    ],
-  },
-  {
-    images: [
-      {
-        source: "/image/transformations/mario-1.jpeg",
-        title: "Transfomation 1",
-      },
-      {
-        source: "/image/transformations/mario-2.jpeg",
+        source: "/image/transformations/k-2.jpeg",
         title: "Transfomation 2",
       },
       {
-        source: "/image/transformations/mario-3.jpeg",
+        source: "/image/transformations/k-3.jpeg",
         title: "Transfomation 3",
       },
-    ],
-  },
-  {
-    images: [
-      {
-        source: "/image/transformations/alex-1.jpeg",
-        title: "Transfomation 1",
-      },
-      {
-        source: "/image/transformations/alex-2.jpeg",
-        title: "Transfomation 2",
-      }
     ],
   },
   {
@@ -91,10 +55,45 @@ const TESTIMONIALS = [
       }
     ],
   },
+  {
+    images: [
+      {
+        source: "/image/transformations/alex-1.jpeg",
+        title: "Transfomation 1",
+      },
+      {
+        source: "/image/transformations/alex-2.jpeg",
+        title: "Transfomation 2",
+      }
+    ],
+  },
+  {
+    images: [
+      {
+        source: "/image/transformations/rui-1.jpeg",
+        title: "Transfomation 1",
+      },
+      {
+        source: "/image/transformations/rui-2.jpeg",
+        title: "Transfomation 2",
+      },
+    ],
+  },
+  {
+    images: [
+      {
+        source: "/image/transformations/tanjil-1.jpeg",
+        title: "Transfomation 1",
+      },
+      {
+        source: "/image/transformations/tanjil-2.jpeg",
+        title: "Transfomation 2",
+      },
+    ],
+  }
 ];
 
 export function Testimonials() {
-  // 1. Destructure emblaApi to control the carousel via buttons
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true, 
     align: 'start',
@@ -103,7 +102,6 @@ export function Testimonials() {
     Autoplay({ delay: 3000, stopOnInteraction: true })
   ]);
 
-  // 2. Button Handlers
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
   }, [emblaApi]);
@@ -137,7 +135,7 @@ export function Testimonials() {
             {TESTIMONIALS.map(({ images }, key) => (
               <div 
                 key={key}
-                className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_25%] min-w-0 pl-[16px] relative h-[400px]"
+                className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.33%] min-w-0 pl-[24px] relative h-[450px]"
               >
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-md">
                   <GalleryWithCarousel key={key} {...images} />
